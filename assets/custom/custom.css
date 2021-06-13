@@ -1,0 +1,462 @@
+.file-tree, .navbar,.modal .modal-header,.btn-primary {
+	background-color: #483d55;
+}
+.header-first-col {
+	background-color: #483d55;
+	width: 16.6%;
+	height: 54px;
+}
+.sidebar {
+	margin-top: 0px;
+}
+.nav-sidebar>li>a {
+	color: #ffffff;
+}
+
+.nav-sidebar>li>a:hover,.nav-sidebar>li.active>a {
+	color: #00b1ff;
+}
+
+.nav-pannel {
+	padding-left: 0px;
+}
+
+.breadcrumb {
+	background: #f5fafc;
+	padding-left: 2%;
+	border-radius: 50px;
+}
+.breadcrumb a, .breadcrumb>.active,
+.breadcrumb>li+li:before {
+	color: #95989a;
+}
+/* folders start */
+a {
+	width: 100%;
+	text-align: left;
+	/* padding: 1%;  */
+	
+}
+.rc a {
+	font-size: large;
+	color: rgba(0,0,0,.72);
+	font-weight: 500;
+	padding: 4%;
+}
+.rc {
+   margin:1%;
+   display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    height: 48px;
+    padding: 0%;
+}
+.rc span {
+  margin-left: 5%;
+}
+.rc a.selected {
+  background-color: #483d55;
+  color: white;
+}
+.rc a i {
+  font-size: 20px;
+  color: rgba(0,0,0,.72);
+}
+.rc a.selected i {
+ padding: 5% !important;
+ 
+  background-color: #fefefe;
+  color: black;
+  border-radius: 100px;
+}
+/* folders end */
+
+
+
+/*-------------------------
+  Content area
+-------------------------*/
+
+.filemanager .data {
+  margin: 0px;
+  padding: 0px;
+  z-index: -3;
+}
+
+.filemanager .data.animated {
+  -webkit-animation: showSlowlyElement 700ms; /* Chrome, Safari, Opera */
+  animation: showSlowlyElement 700ms; /* Standard syntax */
+}
+
+.filemanager .data li a.selected{
+  background-color: #483d55;
+}
+
+.filemanager .data li {
+  border: 3px solid #483d55;
+  border-radius: 3px;
+  /*background-color: #483d55;*/
+  width: 245px;
+  height: 118px;
+  list-style-type: none;
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  padding: 0.3em;
+  z-index: 1;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.3s background-color;
+}
+
+.filemanager .data li:hover {
+  background-color: #42424E;
+  color:#fefefe;
+}
+
+.filemanager .data li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.filemanager .data li .name {
+  float: left;
+  color: #FF5722;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  white-space: nowrap;
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  top: 40px;
+  margin-left: 100px;
+}
+
+.filemanager .data li .details {
+  color: #2196f3;
+  font-size: 13px;
+  font-weight: 400;
+  width: 55px;
+  height: 10px;
+  top: 64px;
+  white-space: nowrap;
+  position: absolute;
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.filemanager .nothingfound {
+  background-color: #483d55;
+  width: 23em;
+  height: 21em;
+  margin: 0 auto;
+  display: none;
+  font-family: Arial;
+  -webkit-animation: showSlowlyElement 700ms; /* Chrome, Safari, Opera */
+  animation: showSlowlyElement 700ms; /* Standard syntax */
+}
+
+.filemanager .nothingfound .nofiles {
+  margin: 30px auto;
+  top: 3em;
+  border-radius: 50%;
+  position:relative;
+  background-color: #d72f6e;
+  width: 11em;
+  height: 11em;
+  line-height: 11.4em;
+}
+.filemanager .nothingfound .nofiles:after {
+  content: '×';
+  position: absolute;
+  color: #ffffff;
+  font-size: 14em;
+  margin-right: 0.092em;
+  right: 0;
+}
+
+.filemanager .nothingfound span {
+  margin: 0 auto auto 6.8em;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  height: 13px;
+  position: relative;
+  top: 2em;
+}
+
+@media all and (max-width:965px) {
+
+  .filemanager .data li {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes showSlowlyElement {
+  100%    { transform: scale(1); opacity: 1; }
+  0%    { transform: scale(1.2); opacity: 0; }
+}
+
+/* Standard syntax */
+@keyframes showSlowlyElement {
+  100%    { transform: scale(1); opacity: 1; }
+  0%    { transform: scale(1.2); opacity: 0; }
+}
+
+
+/*-------------------------
+    Icons
+-------------------------*/
+
+.icon {
+  font-size: 0px;
+}
+.icon.folder {
+  display: inline-block;
+  margin: 1em;
+  background-color: transparent;
+  overflow: hidden;
+}
+.icon.folder:before {
+  content: '';
+  float: left;
+
+  width: 1.5em;
+  height: 0.45em;
+
+  margin-left: 0.07em;
+  margin-bottom: -0.07em;
+
+  border-top-left-radius: 0.1em;
+  border-top-right-radius: 0.1em;
+
+}
+.icon.folder:after {
+  content: '';
+  float: left;
+  clear: left;
+
+  width: 3em;
+  height: 2.25em;
+
+  border-radius: 0.1em;
+}
+.icon.folder.full:before {
+  height: 0.55em;
+}
+.icon.folder.full:after {
+  height: 2.15em;
+}
+
+.icon.file {
+    width: 100px;
+    height: 90px;
+    display: block;
+    margin: 0px;
+       background-image: url('icons/png/file.png');
+
+    background-repeat:no-repeat;
+   background-size:contain;
+}
+.icon.file:first-line {
+  font-size: 13px;
+  font-weight: 700;
+}
+.icon.file:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border-width: 0;
+  border-bottom: 2.6em solid #DADDE1;
+  border-right: 2.22em solid rgba(0, 0, 0, 0);
+  top: -34.5px;
+  right: -4px;
+}
+
+
+.xls, .xlsx {
+     background-image: url('icons/png/xls.png') !important;
+}
+
+.psd { 
+    background-image: url('icons/png/psd.png') !important;
+}
+
+.svg {
+      background-image: url('icons/png/svg.png') !important;
+}
+
+.jpg, .jpeg {
+      background-image: url('icons/png/jpg.png') !important;
+}
+.pdf {
+    background-image: url('icons/png/pdf.png') !important;
+}
+
+.png,.gif {
+      background-image: url('icons/png/png.png') !important;
+}
+
+.exe {
+      background-image: url('icons/png/exe.png') !important;
+}
+
+.fla {
+      background-image: url('icons/png/fla.png') !important;
+}
+
+.flash {
+      background-image: url('icons/png/flash.png') !important;
+}
+
+.iso,.nrg, .bin {
+      background-image: url('icons/png/iso.png') !important;
+}
+
+
+.json {
+      background-image: url('icons/png/json.png') !important;
+}
+.deb, .dmg, .gz, .rar, .zip, .7z {
+      background-image: url('icons/png/zip.png') !important;
+}
+
+.htm,.htm,.html,.xhtml {
+    background-image: url('icons/png/html.png') !important;
+}
+
+.xml {
+    background-image: url('icons/png/xml.png') !important;
+}
+
+.js {
+    background-image: url('icons/png/javascript.png') !important;
+}
+
+.php{
+    background-image: url('icons/png/php.png') !important;
+}
+
+.zip {
+    background-image: url('icons/png/zip.png') !important;
+}
+
+.rb,.ico,.ini,.cfg, .c, .class, .cpp, .cs, .dtd, .h ,.java {
+    background-image: url('icons/png/dreamweaver.png') !important;
+}
+.css, .saas, .scss {
+     background-image: url('icons/png/css.png') !important;
+}
+
+/* Font File Extension */
+.fnt, .fon, .otf, .ttd {
+     background-image: url('icons/png/font.png') !important;
+}
+
+/* AutoCad Files Extention */
+
+.dwg, .dxf {
+     background-image: url('icons/png/dwg.png') !important;
+}
+
+.ai {
+     background-image: url('icons/png/ai.png') !important;
+}
+
+/* Database Files Extention */
+
+.dbf, .db, .mdb, .pdb, .sql {
+     background-image: url('icons/png/dbf.png') !important;
+}
+
+/* Text Files Extention */
+.doc, .docx {
+     background-image: url('icons/png/doc.png') !important;
+}
+.log, .error_log {
+    background-image: url('icons/png/log.png') !important;
+}
+.odt {
+    background-image: url('icons/png/odt.png') !important;
+}
+.rtf {
+    background-image: url('icons/png/rtf.png') !important;
+}
+.txt {
+    background-image: url('icons/png/txt.png') !important;
+}
+.wpd {
+    background-image: url('icons/png/wpd.png') !important;
+}
+.wps {
+    background-image: url('icons/png/wps.png') !important;
+}
+
+/* Data Files Extention */
+.csv {
+      background-image: url('icons/png/csv.png') !important;
+}
+.dat {
+      background-image: url('icons/png/dat.png') !important;
+}
+.key {
+      background-image: url('icons/png/key.png') !important;
+}
+.pps,.ppsx,.ppt,.pptx {
+      background-image: url('icons/png/ppt.png') !important;
+}
+.tar {
+      background-image: url('icons/png/zip-1.png') !important;
+}
+.xml {
+      background-image: url('icons/png/xml.png') !important;
+}
+
+/* Audio Files Extention */
+.mp2,.m3u,.m4a,.mpa {
+      background-image: url('icons/png/audio.png') !important;
+}
+.mid {
+      background-image: url('icons/png/mid.png') !important;
+}
+.mp3 {
+      background-image: url('icons/png/mp3.png') !important;
+}
+.wav {
+      background-image: url('icons/png/wav.png') !important;
+}
+.wma {
+      background-image: url('icons/png/wma.png') !important;
+}
+
+/* Video Files Extention */
+.3g2, .3gp, .asf, .m4v, .rm , .srt , .vob, .flv, .mov, .mpg, .swf, .wmv {
+      background-image: url('icons/png/video.png') !important;
+}
+.avi {
+      background-image: url('icons/png/avi.png') !important;  
+}
+.mp4 {
+      background-image: url('icons/png/avi.png') !important;  
+}
+.mkv,  .mpeg, {
+   background-image: url('icons/png/video.png') !important;
+}
+
+/* Image File Extentions */
